@@ -1,1 +1,20 @@
-// 84b67192c86052b0bcac6eb3ac75ed96
+// Variáveis e seleção de elementos
+const apikey = "84b67192c86052b0bcac6eb3ac75ed96"
+const apiCountryURL = "https://countryflagsapi.com/png/"
+
+const cityInput = document.querySelector("#city-input")
+const searchBtn = document.querySelector("#search")
+
+// Funções
+const showWeatherData = (city) => {
+    console.log(city);
+}
+
+// Eventos 
+searchBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const city = cityInput.value;
+
+    console.log(city)
+})
